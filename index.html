@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <title>flipkart clone using bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+           
+        @media (max-width:1200px){
+          #sidebar{
+            display: none;
+          }
+          #main{
+            width: 100vw !important;
+          }
+          .navbar-brand{
+                margin-left: 0px !important;
+            }
+            .btn{
+            width: 40% !important;
+            }
+            #side{
+              margin-left: -40px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: blue !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="margin-left: 80px; color: white;">Flipkart</a>
+          <form class="d-flex" role="search" style="width: 50%;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="border: none;background-color: white;color: black;width: 20%;">Login</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="side">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 30px;">Become a seller</a>
+              </li>
+             
+              <li class="nav-item dropdown;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;margin-left: 30px;">
+                  more
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enabled" aria-disabled="true" style="color: white;margin-left: 30px;">Cart</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+       <div class="container-fluid">
+        <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;background-color: white;color: black;">
+              Electronics
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"  style="border: none;background-color: white;color: black;">
+              TV & Appliances
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="border: none;background-color: white;color: black;">
+              Men
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="border: none;background-color: white;color: black;">
+              Women
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group dropstart">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;background-color: white;color: black;">
+              Baby&Kids
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group dropend">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;background-color: white;color: black;">
+              Home& Furniture
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+          
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: white;
+            border: none;
+            color: black;" >
+              Sports
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+       </div>
+    <div class=" container-fluid" style="display: flex;background-color: whitesmoke;">
+        <div class="container-fluid" style="width:calc(20vw - 14px);background-color: white;margin: 7px;margin-left: -5px;" id="sidebar">
+            <div class="row">
+                <div class="col-md-6" style="font-size: 18px;font-weight: 600;text-align: start;">Filters</div>
+                <div class="col-md-6" ><a href="" style="font-size: 14px;color: blue;font-weight:bold;text-decoration: none;">CLEAR ALL</a></div><br><br></div>
+                <div class="row">
+                <div class="col-md-12"><button style="background-color: grey;border: none;font-weight:400;">x POCO</button></div>
+                </div><br><hr>
+                 <div class="row">
+                    <div class="col-md-12" style="font-weight:normal;text-align: start;">CONTAINERS</div>
+                 </div><br>
+                 <div class="row">
+                    <div class="col-md-12"><div class="btn-group dropstart">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;border: none;color:grey;font-size: 14px;">
+                          Mobiles & Accessories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <!-- Dropdown menu links -->
+                        </ul>
+                      </div></div>
+                 </div><br>
+                 <div class="row">
+                    <div class="col-md-12" style="font-weight:600;padding-left: 35px;font-size: 14px;">Mobiles</div>
+                 </div><hr>
+                 <div class="row">
+                    <div class="col-md-12" style="font-weight: 600;font-size: 14px;">PRICE</div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-12">
+                       <input type="range" style="color: blue;background-color: blue;"> 
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-5" >
+                        <select name="min" id="min" style="width: 100px;">
+                            <option value="MIN">MIN</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">to</div>
+                    <div class="col-md-5" >
+                        <select name="min" id="min" style="width: 100px;">
+                            <option value="MIN">30000</option>
+                        </select>
+                    </div>
+                 </div><hr>
+                 <div class="row">
+                    <div class="col-md-12" style="font-size: 14px;font-weight: 600;">BRAND</div>
+                    <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          POCO
+                        </label> <br><br>
+                      </div></div><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          OPPO
+                        </label><br><br>
+                      </div></div><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          REDMI
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          APPLE <br>
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          NOKIA <br>
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          SAMSUNG
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          REAL ME <br><br>
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          MI <br>
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          MOTO <br><br>
+                        </label>
+                      </div></div><br><br>
+                      <div class="col-md-12"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          IPAD <br><br>
+                        </label>
+                      </div></div><br><br><hr>
+                 </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        <div class="container-fluid " style="width: calc(80vw - 14px);margin: 7px;margin-right: -5px;background-color: white;" id="main">
+            <div class="row">
+                <div class=" col-md-1 col-sm-2 col-xs-1" style="font-size: 14px;">Home </div>
+                <div class=" col-sm-3 col-md-2 col-xs-1" style="font-size: 14px;">Mobiles&Acc.. </div>
+                
+                <div class=" col-md-1 col-sm-2 col-xs-1" style="font-size: 14px;">Mobiles</div>
+                </div>
+                <div class="row">
+     
+                </div>
+                <div class="row ">
+                <div class="col-12" style="line-height: 30px;font-weight: 600;">Showing 1-24 of 56 results for "iphone 14 pro"</div> 
+                </div>
+                <div class="row" style="font-size: 16px;">
+                 <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1">Sort by</div>
+                 <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1">Relevance</div>
+                 <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1">Popularity</div>
+                 <div class="col-sm-5 col-md-2 col-lg-2 col-xl-2">Price-High to low</div>
+                 <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2">Price-Low to High</div>
+                 <div class="col-sm-3 col-md-2 col-lg-2 cpl-xl-1">Newest First</div>
+                </div>
+                <hr>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <img src="/html and css/project/poco flipkart.jpeg" height="200px" width="140px;">
+
+                </div>
+                <div class="col-md-5">
+                    <h5  style="text-align: start;margin-left: 5px;">POCO C51 (Royal Blue,64 GB)</h5>
+                    <button type="button" style="border-radius:0px;height: 15px;width: 30px;font-size: 12px;line-height: 5px; background-color: green;margin-left: 10px;color: white;border: none;">4.1*</button>&nbsp;<span style="font-size: 14px;">69,925 Ratings & 3,216 Reviews</span>
+                 <br>
+                 <ul style="font-size: 14px;line-height: 25px;">
+                    <li>4 GB RAM | 64 GB ROM| Expandable Upto 1 TB</li>
+                    <li>16.556 cm (6.52 inch) HD + Display</li>
+                    <li>8MP Dual Rear Camera | 5MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Helio G36 Processor</li>
+                    <li>1 year Manufacturer Warranty for Phone and 6month Warranty for in the Box Accessories</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="font-size: 20px;">$16,980 <span style="margin-left:50px;"><img src="/html and css/project/flipkart.jfif" alt="" width="50px" height="25px;"></span><br>
+                    <p style="display: inline-block;text-decoration: line-through;font-size: 16px;">9,999 </p><span style="color:green;margin-left: 10px;font-size: 12px;">35% off</span>
+                    <p style="font-size: 12px;">Free delivery by <b>Tomorrow</b></p>
+                    <p style="color: green;font-size: 12px;line-height:0px;">Save extra with combo offers</p>
+                    <p style="font-size: 11px;line-height:0px;">No cost EMI from $5,879/month</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <img src="/html and css/project/poco flipkart.jpeg" height="200px" width="140px;">
+
+                </div>
+                <div class="col-md-5">
+                    <h5  style="text-align: start;margin-left: 5px;">REDMI 11 PRIME (Royal Aqua,64 GB)</h5>
+                    <button type="button" style="border-radius:0px;height: 15px;width: 30px;font-size: 12px;line-height: 5px; background-color: green;margin-left: 10px;color: white;border: none;">4.1*</button>&nbsp;<span style="font-size: 14px;">69,925 Ratings & 3,216 Reviews</span>
+                 <br>
+                 <ul style="font-size: 14px;line-height: 25px;">
+                    <li>4 GB RAM | 64 GB ROM| Expandable Upto 1 TB</li>
+                    <li>16.556 cm (6.52 inch) HD + Display</li>
+                    <li>8MP Dual Rear Camera | 5MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Helio G36 Processor</li>
+                    <li>1 year Manufacturer Warranty for Phone and 6month Warranty for in the Box Accessories</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="font-size: 20px;">$26,980 <span style="margin-left:50px;"><img src="/html and css/project/flipkart.jfif" alt="" width="50px" height="25px;"></span><br>
+                    <p style="display: inline-block;text-decoration: line-through;font-size: 16px;">8,999 </p><span style="color:green;margin-left: 10px;font-size: 12px;">35% off</span>
+                    <p style="font-size: 12px;">Free delivery by <b>Tomorrow</b></p>
+                    <p style="color: green;font-size: 12px;line-height:0px;">Save extra with combo offers</p>
+                    <p style="font-size: 11px;line-height:0px;">No cost EMI from $5,879/month</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <img src="/html and css/project/infinix mobile flipkart.jpeg" height="200px" width="140px;">
+
+                </div>
+                <div class="col-md-5">
+                    <h5  style="text-align: start;margin-left: 5px;">INFINIX C1 (Royal Green,64 GB)</h5>
+                    <button type="button" style="border-radius:0px;height: 15px;width: 30px;font-size: 12px;line-height: 5px; background-color: green;margin-left: 10px;color: white;border: none;">4.1*</button>&nbsp;<span style="font-size: 14px;">69,925 Ratings & 3,216 Reviews</span>
+                 <br>
+                 <ul style="font-size: 14px;line-height: 25px;">
+                    <li>4 GB RAM | 64 GB ROM| Expandable Upto 1 TB</li>
+                    <li>16.556 cm (6.52 inch) HD + Display</li>
+                    <li>8MP Dual Rear Camera | 5MP Front Camera</li>
+                    <li>5000 mAh Battery</li>
+                    <li>Helio G36 Processor</li>
+                    <li>1 year Manufacturer Warranty for Phone and 6month Warranty for in the Box Accessories</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="font-size: 20px;">$18,980 <span style="margin-left:50px;"><img src="/html and css/project/flipkart.jfif" alt="" width="50px" height="25px;"></span><br>
+                    <p style="display: inline-block;text-decoration: line-through;font-size: 16px;">5,599 </p><span style="color:green;margin-left: 10px;font-size: 12px;">35% off</span>
+                    <p style="font-size: 12px;">Free delivery by <b>Tomorrow</b></p>
+                    <p style="color: green;font-size: 12px;line-height:0px;">Save extra with combo offers</p>
+                    <p style="font-size: 11px;line-height:0px;">No cost EMI from $5,879/month</p>
+                </div>
+            </div>
+            <hr>
+
+          
+
+          
+          
+        </div>
+    </div>
+</body>
+</html>
